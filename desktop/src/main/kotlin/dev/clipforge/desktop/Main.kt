@@ -1,7 +1,6 @@
 package dev.clipforge.desktop
 
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
@@ -15,7 +14,7 @@ fun main() = application {
         title = "ClipForge",
         state = rememberWindowState(width = 1280.dp, height = 820.dp),
     ) {
-        MaterialTheme {
+        ClipForgeTheme {
             Surface(modifier = Modifier.fillMaxSize()) {
                 EditorApp()
             }
